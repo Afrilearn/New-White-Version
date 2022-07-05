@@ -61,6 +61,17 @@
   top: 2px !important;
   left: -7px !important;
 }
+
+@media screen and (max-width: 978px) {
+  .experienceAfrilearnImg {
+    top: 167px !important;
+  }
+  /* .imageTag {
+    position: absolute;
+    top: -16px;
+    right: 17px;
+  } */
+}
 .joinForFree:hover,
 .experienceAfrilearn:hover {
   cursor: pointer;
@@ -108,7 +119,7 @@
 }
 .profileshh3 {
   font-family: "heading";
-  width: 550px;
+  width: 120%;
   font-size: 48px;
   font-weight: 500;
   color: #29465b;
@@ -139,7 +150,7 @@
 @media screen and (max-width: 514px) {
   .profileshh3 {
     font-size: 25px;
-    padding-right: 100px;
+    padding-right: 78px;
   }
   .bulletTextt {
     font-size: 17px;
@@ -167,12 +178,6 @@
     display: inline-flex !important;
     margin-top: -10px !important;
   }
-
-  /* .footer {
-    width: 200%;
-    bottom: 0;
-  } */
-
   .last .lastttt {
     display: flex !important;
     flex-direction: row !important;
@@ -190,7 +195,6 @@
     margin-left: 5%;
   }
   .last {
-    width: 200%;
     padding-left: 25px !important;
   }
   .footerText h3 {
@@ -355,13 +359,21 @@
   margin-bottom: 0;
   margin-top: 4px;
 }
+
+/* @media screen and (max-width: 374px) {
+  .testimonials p {
+    margin-top: 0 !important;
+    left: -53px;
+  } */
+/* } */
+
 .crossPlatform section {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 .crossPlatform h3 {
   font-family: "heading";
-  width: 550px;
+  width: 120%;
   line-height: 63px;
   font-size: 48px;
   font-weight: 500;
@@ -418,14 +430,21 @@
   color: #333333;
 }
 
+@media screen and (max-width: 621px) {
+  .testimonials {
+    margin-top: 93px;
+  }
+}
 @media screen and (max-width: 480px) {
   .testimonials p {
-    font-size: 12px;
+    font-size: 15px;
+    left: 75px;
+    top: -47px;
   }
   .heroText h1 {
     font-size: 20px;
     margin: 0;
-    width: 100%;
+    width: 277px;
   }
 
   .homepage .mark {
@@ -434,12 +453,21 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .testimonials p {
+@media screen and (max-width: 380px) {
+  .testimonials {
+    margin: 15px !important;
+    position: relative;
+  }
+
+  .homepage .mark {
+    width: 15px !important;
+    height: 15px !important;
+  }
+
+  .heroTextHone {
     position: absolute;
-    top: 29px;
-    left: 5px;
-    width: 200px;
+    left: -50px;
+    top: 28px;
   }
 }
 
@@ -454,6 +482,7 @@
   font-size: 40px;
   /* margin-top: 50px; */
   text-align: center;
+  color: #29465b;
 }
 
 .faq section {
@@ -491,15 +520,14 @@
   width: 791.11px;
 }
 
-.quickJoinSec{
-align-items: flex-start;
-height: 410px;
+.quickJoinSec {
+  align-items: flex-start;
+  height: 410px;
 }
 
 .quickJoin section {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
 .quickJoin .classes {
   left: 190px !important;
@@ -508,15 +536,6 @@ height: 410px;
   position: relative;
   display: flex;
   left: -75px;
-}
-/* .quickJoin .joinButton {
-  left: -90px !important;
-} */
-
-.courseSelectSection {
-  /* margin-top: -485px; */
-  /* position: absolute;
-  top:50px; */
 }
 
 .paddingRightOff {
@@ -533,7 +552,6 @@ height: 410px;
 
 .myDropCont {
   position: relative;
-  /* z-index: 3; */
   cursor: pointer;
 }
 .myPlaceholder {
@@ -579,10 +597,6 @@ height: 410px;
   display: block;
   cursor: pointer;
 }
-
-/* .courseSelectSectionDropDown li {
-padding: 15px;
-} */
 
 .paddingRightOff ul li {
   padding-bottom: 7px;
@@ -639,6 +653,9 @@ padding: 15px;
   .myPlaceholder {
     font-size: 10px !important;
   }
+  .bulletTexttt {
+    padding-left: 2%;
+  }
 }
 
 @media screen and (max-width: 353px) {
@@ -667,7 +684,9 @@ padding: 15px;
 .partners {
   margin: 50px;
   position: relative;
+  color: #29465b;
 }
+
 .partners section {
   margin: 0px 0 50px;
   overflow: auto;
@@ -715,11 +734,11 @@ padding: 15px;
 .cardstylling button {
   background: #00d9b6;
   border-radius: 30px;
-  width: 261px;
+  width: 85%;
   padding: 9px;
   color: #ffffff;
   border: none;
-  margin-left: 50px;
+  margin-left: 5%;
 }
 
 .partners .box {
@@ -806,14 +825,6 @@ padding: 15px;
   padding: 15px 18px !important;
   border-radius: 39px;
 }
-.btnJoinForFree {
-  /* margin-top: 25px; */
-  border: none;
-  background-color: #00d9b6;
-  color: white !important;
-  padding: 15px 18px !important;
-  border-radius: 39px;
-}
 
 @media screen and (max-width: 768px) {
   .cardstylling {
@@ -825,8 +836,14 @@ padding: 15px;
     justify-content: center;
   }
 
+  .partners {
+    margin: 5px;
+    position: relative;
+  }
+
   .cardstylling button {
-    margin-left: 22px;
+    margin-left: 15%;
+    width: 60%;
   }
 
   .faq section {
@@ -838,5 +855,11 @@ padding: 15px;
 
   .partners .partnerLogo {
     padding: 1px !important;
+  }
+  .crossPlatform .crossPlatformTextPosition {
+    margin-bottom: 100px;
+  }
+  .profileImagePosition {
+    margin-right: 0px;
   }
 }
