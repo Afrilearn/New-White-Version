@@ -16,6 +16,9 @@ import { getCourseInitiate } from '../../../redux/actions/course'
 import { fetchRoles } from '../../../redux/actions/auth'
 import Spinner from '../../widgets/spinner/index'
 import { fetchUserRoles } from '../../../redux/actions/subject'
+import { FiTwitter } from 'react-icons/fi';
+// import { FaInstagram } from 'react-icons/fi';
+import { FaFacebook, FaLinkedinIn, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 const HomePage = () => {
   const { userRoles } = useSelector((state) => state.mySubjectCourse)
@@ -31,7 +34,8 @@ const HomePage = () => {
         <div id="homepageFirstSection" className="row">
           <div className="col-md-6" id="homepageFirstSectionText">
             <h1 className={styles.mainheading}>
-            Get ahead with Afrilearn
+            Get ahead with <br></br>
+            Afrilearn
             </h1>
 
             <p className={styles.underHeadingP}>
@@ -80,7 +84,7 @@ const HomePage = () => {
       <ExploreAfrilearn userRole={userRoles} />
       <GameIntro />
       <CrossPlatform />
-      <JoinLeague />
+      {/* <JoinLeague /> */}
       <Row className="m-auto mt-5 mb-5 w-50 pt-5 pb-5">
         {/* <Col md={6}>  */}
         <Testimonials />
@@ -92,7 +96,6 @@ const HomePage = () => {
       </Row> */}
       <QuickJoin />
       <Partners />
-
       <Footer />
     </>
   )
@@ -768,7 +771,7 @@ export const Footer = () => {
                 </li>
                 <li>
                   <Link passHref href="/partnership">
-                  partnership
+                  Partner with Us
                   </Link>
                 </li>
               </ul>
@@ -810,60 +813,35 @@ export const Footer = () => {
           <div
             className={`col-lg-2 col-md-4 col-sm-2 ms-lg-5 ms-md-0 row ${styles.grided}`}
           >
-            <div style={{ width: '45px', padding: '0' }}>
+            <div className={styles.iconWrapper}>
               <Link passHref href="https://web.facebook.com/myAfrilearn">
-                <Image
-                  alt={'design image'}
-                  src="/assets/img/common/homepage/Group 2361.png"
-                  width={'35px'}
-                  height={'35px'}
-                />
+                <FaFacebook size={25} />
               </Link>
             </div>
-            <div style={{ width: '45px', padding: '0' }}>
+            <div className={styles.iconWrapper}>
               <Link
                 passHref
                 href="https://www.instagram.com/accounts/login/?next=/afrilearn/"
               >
-                <Image
-                  alt={'design image'}
-                  src="/assets/img/common/homepage/Social Icons2.png"
-                  width="35px"
-                  height="35px"
-                />
+                <FaInstagram size={25} />
               </Link>
             </div>
-            <div style={{ width: '45px', padding: '0' }}>
+            <div className={styles.iconWrapper}>
               <Link passHref href="https://twitter.com/Afrilearn">
-                <Image
-                  alt={'design image'}
-                  src="/assets/img/common/homepage/Social Icons1.png"
-                  width="35px"
-                  height="35px"
-                />
+              <FiTwitter size={25} />
               </Link>
             </div>
-            <div style={{ width: '45px', padding: '0' }}>
+            <div className={styles.iconWrapper}>
               <Link passHref href="https://www.linkedin.com/company/afrilearn/">
-                <Image
-                  alt={'design image'}
-                  src="/assets/img/common/homepage/Group 2362.png"
-                  width={'35px'}
-                  height={'35px'}
-                />
+                <FaLinkedinIn size={25} />
               </Link>
             </div>
-            <div style={{ width: '45px', padding: '0' }}>
+            <div className={styles.iconWrapper}>
               <Link
                 passHref
                 href="https://www.youtube.com/channel/UC_BnnokJom1DWipMl0oSxWA"
               >
-                <Image
-                  alt={'design image'}
-                  src="/assets/img/common/homepage/Social Icons.png"
-                  width={'35px'}
-                  height={'35px'}
-                />
+                <FaYoutube size={25} />
               </Link>
             </div>
           </div>
