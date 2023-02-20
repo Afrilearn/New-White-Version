@@ -1,6 +1,6 @@
 .mainheading {
   font-family: heading;
-  font-size: 65px;
+  font-size: 35px;
   margin-top: 80px;
   color: #29465b;
 }
@@ -9,6 +9,7 @@
   margin-top: 30px;
   padding-right: 83px;
   color: #333333;
+  /* font-size: 1.3em; */
 }
 .afterSubHeading {
   margin-top: 40px;
@@ -17,7 +18,7 @@
   /* border: solid 1px black; */
   background-color: #00d9b6;
   color: #333 !important;
-  padding: 10px 20px !important;
+  padding: 0.7em 1em !important;
   border-radius: 39px;
 }
 
@@ -42,6 +43,23 @@
 .explorePart2 img {
   border-radius: 30px;
 }
+
+.iconWrapper{
+  background-color: #787878;
+  padding: 0.4em;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin-right: 1em;
+  cursor: pointer;
+  color: #fff;
+}
+.iconWrapper:hover {
+  background-color: #00d9b6;
+  color: #000;
+}
+
 @media screen and (max-width: 1199px) {
   .afterSubHeading_button {
     width: 250px !important;

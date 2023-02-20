@@ -177,7 +177,7 @@
 }
 
 .nologinmenu {
-  width: 35%;
+  width: 30%;
   display: flex;
   align-items: center;
   gap: 2em;
@@ -205,4 +205,17 @@
 
 .linkswrapper a:hover {
   background-color: gray;
+}
+.topNavBar{
+  background-color: #29465b;
+  height: 9vh;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  padding: 1em 0;
+}
+.learnMoreText{
+  /* background-color: red; */
+  color: #00d9b6;
+  cursor: pointer;
 }
