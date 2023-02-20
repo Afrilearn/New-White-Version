@@ -773,9 +773,9 @@ const Navigation = () => {
             userRole !== '607ededa2712163504210684' && (
               <div className={styles.nologinmenu}>
                 {/* implementing next.auth */}
-                <Link href="/about">
+                {/* <Link href="/about">
                   <button className={styles.aboutmenu}>About Us</button>
-                </Link>
+                </Link> */}
                 <Link href="/login">
                   <button className={styles.btnlogin}>Login</button>
                 </Link>
