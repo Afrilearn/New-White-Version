@@ -194,7 +194,14 @@ const Navigation = () => {
   return (
     <>
     <div className={styles.topNavBar}>
-        <p className={styles.topText}>As seen in <strong>Global Citizen</strong>, Afrilearn is democratizing quality education for Africans! <Link href="https://www.globalcitizen.org/en/content/nigeria-schools-covid-19-internet-isaac-oladipupo/"><span className={styles.learnMoreText}>Learn more</span></Link>
+        <p className={styles.topText}>As seen in <strong>Global Citizen</strong>, Afrilearn is democratizing quality education for Africans! <Link 
+        href="https://www.globalcitizen.org/en/content/nigeria-schools-covid-19-internet-isaac-oladipupo/">
+          {/* <span > */}
+          <a target="_blank" >
+            <span className={styles.learnMoreText}>Learn more</span>
+          </a>
+          {/* </span> */}
+          </Link>
         </p>
     </div>
 
