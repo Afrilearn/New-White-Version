@@ -9,17 +9,37 @@
   margin-top: 30px;
   padding-right: 83px;
   color: #333333;
-  /* font-size: 1.3em; */
 }
 .afterSubHeading {
   margin-top: 40px;
 }
 .joinForFree {
-  /* border: solid 1px black; */
-  background-color: #00d9b6;
-  color: #333 !important;
-  padding: 0.7em 1em !important;
-  border-radius: 39px;
+  margin-right: 0.5em;
+  margin-top: 1.5em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.afterTwoSubHeading_button{
+  width: 85%;
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  padding-bottom: 1em;
+}
+.afterOneSubHeading_button{
+  width: 94.9%;
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  padding-bottom: 1em;
+
+}
+.whyAfrilearWorksSegment{
+  margin: 0 93px !important;
+}
+.iconCircleWrapper{
+  margin-right: 0.7em;
 }
 
 .joinForGames {
@@ -46,10 +66,10 @@
 
 .iconWrapper{
   background-color: #787878;
-  padding: 0.4em;
+  padding: 0.1em;
   border-radius: 50px;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   text-align: center;
   margin-right: 1em;
   cursor: pointer;
@@ -58,6 +78,12 @@
 .iconWrapper:hover {
   background-color: #00d9b6;
   color: #000;
+}
+.afterSubHeading_button{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
 }
 
 @media screen and (max-width: 1199px) {
@@ -153,9 +179,7 @@
   margin-top: 70px;
 }
 .landingpageg {
-  margin-left: 5%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-left: 7%;
 }
 .bulletTexttt {
   color: #333333;
@@ -917,12 +941,31 @@
   font-weight: 400;
 }
 .btnJoinForFree {
-  /* margin-top: 25px; */
   border: none;
   background-color: #00d9b6;
   color: #333 !important;
   padding: 15px 18px !important;
   border-radius: 39px;
+}
+.appIconsWrapper{
+  /* background-image: url("../../../public/assets/img/app-store.svg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80%; 
+  width: 28%;
+  margin-right: 0.7em;
+  padding: 0.8em 0;
+  cursor: pointer;
+}
+.appIconsPlayWrapper{
+  /* background-image: url("../../../public/assets/img/play-store.svg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80%; 
+  width: 31%;
+  margin-right: 0.4em;
+  padding: 0.8em 0;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

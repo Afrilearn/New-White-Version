@@ -9,7 +9,7 @@ import WhyAfrilearn from './extra/whyAfrilearn'
 import ExploreAfrilearn from './extra/exploreAfrilearn'
 // import Testimonials from './extra/testimonial'
 import CommentPage from './extra/testimonial'
-import { BsCheck2All } from 'react-icons/bs'
+import { BsCheck2All, BsPlayCircleFill } from 'react-icons/bs'
 import { Accordion, Col, Row } from 'react-bootstrap'
 import { useRouter } from 'next/router'
 import { getCourseInitiate } from '../../../redux/actions/course'
@@ -19,6 +19,7 @@ import { fetchUserRoles } from '../../../redux/actions/subject'
 import { FiTwitter } from 'react-icons/fi';
 // import { FaInstagram } from 'react-icons/fi';
 import { FaFacebook, FaLinkedinIn, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaBeer } from 'react-icons/fa';
 
 const HomePage = () => {
   const { userRoles } = useSelector((state) => state.mySubjectCourse)
@@ -41,31 +42,37 @@ const HomePage = () => {
             <p className={styles.underHeadingP}>
              The personal teacher for secondary school children to learn anytime, pass exams in one sitting and succeed academically.
             </p>
-            <div className={`row ${styles.afterSubHeading}`}>
-              <div className={`col-md-4 ${styles.afterSubHeading_button}`}>
-                <span className={styles.joinForFree}>
-                  <Link passHref href="/register">
-                    JOIN FOR FREE
-                  </Link>
-                </span>
+
+                <div className={styles.joinForFree}>
+                    <BsPlayCircleFill size={35} color={"#00d9b6"} className={styles.iconCircleWrapper}/> 
+                    <Link 
+                      className={styles.linkIconWrapper}
+                    passHref href="/register">
+                      JOIN FOR FREE
+                    </Link>
+                </div>
+              <div className={styles.afterSubHeading_button}>
+                <div className={styles.appIconsWrapper}>
+                  <a passHref href="https://apps.apple.com/ng/app/afrilearn/id1587978653" target="_blank">
+                      <Image 
+                        src='/assets/img/app-store.svg'
+                        alt="Apple store logo"
+                        width={"145%"}
+                        height={"80%"}
+                      />
+                    </a>
+                </div>
+                <div className={styles.appIconsPlayWrapper}>
+                  <a passHref href="https://play.google.com/store/apps/details?id=com.afrilearn" target="_blank">
+                    <Image 
+                      src='/assets/img/play-store.svg'
+                      alt="Apple store logo"
+                      width={"145%"}
+                      height={"80%"}
+                    />
+                  </a>
+                </div>
               </div>
-              <div className={`col-md-6 ${styles.afterSubHeading_button2}`}>
-                {/* <span className={styles.experienceAfrilearn}>
-                  <Image
-                    alt={'design image'}
-                    className={styles.experienceAfrilearnImg}
-                    src={
-                      '/assets/img/common/homepage/play-button-arrowhead 10.png'
-                    }
-                    width={15}
-                    height={15}
-                  />
-                  <Link passHref href="/register">
-                    Experience Afrilearn
-                  </Link>
-                </span> */}
-              </div>
-            </div>
           </div>
           <div className="col-md-6 center">
             <Image
@@ -75,7 +82,7 @@ const HomePage = () => {
                 '/assets/img/common/homepage/73984-girl-studying-on-laptop (1).gif'
               }
               width={550}
-              height={500}
+              height={450}
             />
           </div>
         </div>
@@ -112,7 +119,7 @@ const GameIntro = () => {
     description: [
       'Fun practice to ace JSSCE, WASSCE, UTME, GCE, NECO and more in one sitting',
     ],
-    imageURL: '/assets/img/common/homepage/school.png',
+    imageURL: '/assets/img/gamer-new.jpg',
   }
   return (
     <>
@@ -133,13 +140,15 @@ const GameIntro = () => {
             })}
             <section className={`row`}>
               <div className={`row ${styles.afterSubHeading}`}>
-                <div className="col-md-6">
-                  <button className={styles.joinForGames}>
-                    <Link passHref href=" /register">
+                <div className={styles.joinTwoForFree}>
+                    <BsPlayCircleFill size={35} color={"#00d9b6"} className={styles.iconCircleWrapper}/> 
+                    <Link 
+                      className={styles.linkIconWrapper}
+                    passHref href="/register">
                       JOIN FOR FREE
                     </Link>
-                  </button>
                 </div>
+                
               </div>
             </section>
           </div>
@@ -189,36 +198,29 @@ const CrossPlatform = () => {
                 </p>
               )
             })}
-            <section className={`row ${styles.mobileDownloadSection}`}>
-              <div className="mobileOnlyy">
-                <div className="col-md-4 m-2">
-                  <Link
-                    passHref
-                    href="https://play.google.com/store/apps/details?id=com.afrilearn"
-                  >
-                    <Image
-                      alt={'design image'}
-                      src="/assets/img/google-play.png"
-                      width={'241.28px'}
-                      height={'71.49px'}
-                    />
-                  </Link>
+           
+             <div className={styles.afterTwoSubHeading_button}>
+                <div className={styles.appIconsWrapper}>
+                  <a passHref href="https://apps.apple.com/ng/app/afrilearn/id1587978653" target="_blank">
+                      <Image 
+                        src='/assets/img/app-store.svg'
+                        alt="Apple store logo"
+                        width={"145%"}
+                        height={"80%"}
+                      />
+                    </a>
                 </div>
-                <div className="col-md-4 m-2">
-                  <Link
-                    passHref
-                    href="https://apps.apple.com/ng/app/afrilearn/id1587978653"
-                  >
-                    <Image
-                      alt={'design image'}
-                      src="/assets/img/apple-store.png"
-                      width={'241.28px'}
-                      height={'71.49px'}
+                <div className={styles.appIconsPlayWrapper}>
+                  <a passHref href="https://play.google.com/store/apps/details?id=com.afrilearn" target="_blank">
+                    <Image 
+                      src='/assets/img/play-store.svg'
+                      alt="Apple store logo"
+                      width={"145%"}
+                      height={"80%"}
                     />
-                  </Link>
+                  </a>
                 </div>
               </div>
-            </section>
           </div>
         </section>
       </div>
@@ -337,24 +339,12 @@ const Testimonials = () => {
         >
           <section className={styles.container}>
             <Row>
-
-              {/* <Col md={2}>
-                <Image
-                  alt={'design image'}
-                  className={styles.mark}
-                  src="/assets/img/common/homepage/Quote Mark.png"
-                  width={'70%'}
-                  height={'70%'}
-                />
-              </Col> */}
               <Col md={12}>
                 <h3 className={styles.heroText}>{`${data.description}`}</h3>
               </Col>
             
             </Row>
-            {/* <Row className={styles.testimonials_p}>
-              <p>{data.description[0]}</p>
-            </Row> */}
+
           </section>
         </div>
         <CommentPage />
@@ -771,7 +761,7 @@ export const Footer = () => {
                 </li>
                 <li>
                   <Link passHref href="/partnership">
-                  Partner with Us
+                  Partner with us
                   </Link>
                 </li>
               </ul>
@@ -815,7 +805,9 @@ export const Footer = () => {
           >
             <div className={styles.iconWrapper}>
               <Link passHref href="https://web.facebook.com/myAfrilearn">
-                <FaFacebook size={25} />
+                <a target="_blank">
+                <FaFacebook size={20} />
+                </a>
               </Link>
             </div>
             <div className={styles.iconWrapper}>
@@ -823,17 +815,23 @@ export const Footer = () => {
                 passHref
                 href="https://www.instagram.com/accounts/login/?next=/afrilearn/"
               >
-                <FaInstagram size={25} />
+                <a target="_blank">
+                <FaInstagram size={20} />
+                </a>
               </Link>
             </div>
             <div className={styles.iconWrapper}>
               <Link passHref href="https://twitter.com/Afrilearn">
-              <FiTwitter size={25} />
+                <a target="_blank">
+                <FiTwitter size={20} />
+                </a>
               </Link>
             </div>
             <div className={styles.iconWrapper}>
               <Link passHref href="https://www.linkedin.com/company/afrilearn/">
-                <FaLinkedinIn size={25} />
+                <a target="_blank">
+                <FaLinkedinIn size={20} />
+                </a>
               </Link>
             </div>
             <div className={styles.iconWrapper}>
@@ -841,7 +839,9 @@ export const Footer = () => {
                 passHref
                 href="https://www.youtube.com/channel/UC_BnnokJom1DWipMl0oSxWA"
               >
-                <FaYoutube size={25} />
+                <a target="_blank">
+                  <FaYoutube size={20} />
+                </a>
               </Link>
             </div>
           </div>

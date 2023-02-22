@@ -208,14 +208,13 @@
 }
 .topNavBar{
   background-color: #29465b;
-  height: 9vh;
+  height: 8vh;
   text-align: center;
   align-items: center;
   color: #fff;
-  padding: 1em 0;
+  padding: 0.8em 0;
 }
 .learnMoreText{
-  /* background-color: red; */
   color: #00d9b6;
   cursor: pointer;
 }
