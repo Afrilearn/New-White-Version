@@ -1,7 +1,7 @@
 import styles from '../homepage.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-
+import { BsCheck2All, BsPlayCircleFill } from 'react-icons/bs'
 import { BiCheckCircle} from 'react-icons/bi';
 
 const ProfileSection = ({data}) => {
@@ -16,21 +16,36 @@ const ProfileSection = ({data}) => {
                />
               <span className={styles.bulletText}>{item}</span></p>
           })}        
-          <div className={`${styles.mobileDownloadSection}`}>
-          {/* <div className={`${styles.joinfreebtn} join-btn-wrapper`}> */}
-                <button className={` ${styles.joinbuttonwrap} btn-class-corrected`}><Link passHref href='/register'>JOIN FOR FREE</Link></button>
-   
-                <Link passHref href="https://play.google.com/store/apps/details?id=com.afrilearn">
-                  <Image alt={"design image"} src='/assets/img/google-play.png' width={150} height={55}/> 
-                </Link>             
-              <Link passHref href="https://apps.apple.com/ng/app/afrilearn/id1587978653">
-                <Image 
-                className={styles.storeimage}
-                alt={"design image"} src='/assets/img/apple-store.png' width={150} height={55}/> 
-              </Link>
-            {/* </div> */}
-          {/* </div> */}
-          </div>
+           <div className={styles.joinForFree}>
+                    <BsPlayCircleFill size={35} color={"#00d9b6"} className={styles.iconCircleWrapper}/> 
+                    <Link 
+                      className={styles.linkIconWrapper}
+                    passHref href="/register">
+                      JOIN FOR FREE
+                    </Link>
+                </div>
+          <div className={styles.afterOneSubHeading_button}>
+                <div className={styles.appIconsWrapper}>
+                  <a passHref href="/register">
+                      <Image 
+                        src='/assets/img/app-store.svg'
+                        alt="Apple store logo"
+                        width={"1%"}
+                        height={"1%"}
+                      />
+                    </a>
+                </div>
+                <div className={styles.appIconsPlayWrapper}>
+                  <a passHref href="https://play.google.com/store/apps/details?id=com.afrilearn">
+                    <Image 
+                      src='/assets/img/app-store.svg'
+                      alt="Apple store logo"
+                      width={"1%"}
+                      height={"1%"}
+                    />
+                  </a>
+                </div>
+              </div>
         </div>
         <div className={`col-md-6 ${styles.profileImagePosition}`}>
           <Image alt={"design image"} src={data?.imageURL} width={434} height={371}/> 

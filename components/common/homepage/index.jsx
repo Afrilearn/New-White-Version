@@ -63,7 +63,7 @@ const HomePage = () => {
                     </a>
                 </div>
                 <div className={styles.appIconsPlayWrapper}>
-                  <a passHref href="/register">
+                  <a passHref href="https://play.google.com/store/apps/details?id=com.afrilearn">
                     <Image 
                       src='/assets/img/app-store.svg'
                       alt="Apple store logo"
@@ -119,7 +119,7 @@ const GameIntro = () => {
     description: [
       'Fun practice to ace JSSCE, WASSCE, UTME, GCE, NECO and more in one sitting',
     ],
-    imageURL: '/assets/img/common/homepage/school.png',
+    imageURL: '/assets/img/gamer-new.jpg',
   }
   return (
     <>
@@ -140,12 +140,13 @@ const GameIntro = () => {
             })}
             <section className={`row`}>
               <div className={`row ${styles.afterSubHeading}`}>
-                <div className="col-md-6">
-                  <button className={styles.joinForGames}>
-                    <Link passHref href=" /register">
+                <div className={styles.joinTwoForFree}>
+                    <BsPlayCircleFill size={35} color={"#00d9b6"} className={styles.iconCircleWrapper}/> 
+                    <Link 
+                      className={styles.linkIconWrapper}
+                    passHref href="/register">
                       JOIN FOR FREE
                     </Link>
-                  </button>
                 </div>
               </div>
             </section>
@@ -196,36 +197,29 @@ const CrossPlatform = () => {
                 </p>
               )
             })}
-            <section className={`row ${styles.mobileDownloadSection}`}>
-              <div className="mobileOnlyy">
-                <div className="col-md-4 m-2">
-                  <Link
-                    passHref
-                    href="https://play.google.com/store/apps/details?id=com.afrilearn"
-                  >
-                    <Image
-                      alt={'design image'}
-                      src="/assets/img/google-play.png"
-                      width={'241.28px'}
-                      height={'71.49px'}
-                    />
-                  </Link>
+           
+             <div className={styles.afterTwoSubHeading_button}>
+                <div className={styles.appIconsWrapper}>
+                  <a passHref href="/register">
+                      <Image 
+                        src='/assets/img/app-store.svg'
+                        alt="Apple store logo"
+                        width={"1%"}
+                        height={"1%"}
+                      />
+                    </a>
                 </div>
-                <div className="col-md-4 m-2">
-                  <Link
-                    passHref
-                    href="https://apps.apple.com/ng/app/afrilearn/id1587978653"
-                  >
-                    <Image
-                      alt={'design image'}
-                      src="/assets/img/apple-store.png"
-                      width={'241.28px'}
-                      height={'71.49px'}
+                <div className={styles.appIconsPlayWrapper}>
+                  <a passHref href="https://play.google.com/store/apps/details?id=com.afrilearn">
+                    <Image 
+                      src='/assets/img/app-store.svg'
+                      alt="Apple store logo"
+                      width={"1%"}
+                      height={"1%"}
                     />
-                  </Link>
+                  </a>
                 </div>
               </div>
-            </section>
           </div>
         </section>
       </div>
@@ -778,7 +772,7 @@ export const Footer = () => {
                 </li>
                 <li>
                   <Link passHref href="/partnership">
-                  Partner with Us
+                  Partner with us
                   </Link>
                 </li>
               </ul>
@@ -822,7 +816,9 @@ export const Footer = () => {
           >
             <div className={styles.iconWrapper}>
               <Link passHref href="https://web.facebook.com/myAfrilearn">
-                <FaFacebook size={25} />
+                <a target="_blank">
+                <FaFacebook size={20} />
+                </a>
               </Link>
             </div>
             <div className={styles.iconWrapper}>
@@ -830,17 +826,23 @@ export const Footer = () => {
                 passHref
                 href="https://www.instagram.com/accounts/login/?next=/afrilearn/"
               >
-                <FaInstagram size={25} />
+                <a target="_blank">
+                <FaInstagram size={20} />
+                </a>
               </Link>
             </div>
             <div className={styles.iconWrapper}>
               <Link passHref href="https://twitter.com/Afrilearn">
-              <FiTwitter size={25} />
+                <a target="_blank">
+                <FiTwitter size={20} />
+                </a>
               </Link>
             </div>
             <div className={styles.iconWrapper}>
               <Link passHref href="https://www.linkedin.com/company/afrilearn/">
-                <FaLinkedinIn size={25} />
+                <a target="_blank">
+                <FaLinkedinIn size={20} />
+                </a>
               </Link>
             </div>
             <div className={styles.iconWrapper}>
@@ -848,7 +850,9 @@ export const Footer = () => {
                 passHref
                 href="https://www.youtube.com/channel/UC_BnnokJom1DWipMl0oSxWA"
               >
-                <FaYoutube size={25} />
+                <a target="_blank">
+                  <FaYoutube size={20} />
+                </a>
               </Link>
             </div>
           </div>
