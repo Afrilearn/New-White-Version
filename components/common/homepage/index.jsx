@@ -9,7 +9,7 @@ import WhyAfrilearn from './extra/whyAfrilearn'
 import ExploreAfrilearn from './extra/exploreAfrilearn'
 // import Testimonials from './extra/testimonial'
 import CommentPage from './extra/testimonial'
-import { BsCheck2All } from 'react-icons/bs'
+import { BsCheck2All, BsPlayCircleFill } from 'react-icons/bs'
 import { Accordion, Col, Row } from 'react-bootstrap'
 import { useRouter } from 'next/router'
 import { getCourseInitiate } from '../../../redux/actions/course'
@@ -19,6 +19,7 @@ import { fetchUserRoles } from '../../../redux/actions/subject'
 import { FiTwitter } from 'react-icons/fi';
 // import { FaInstagram } from 'react-icons/fi';
 import { FaFacebook, FaLinkedinIn, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaBeer } from 'react-icons/fa';
 
 const HomePage = () => {
   const { userRoles } = useSelector((state) => state.mySubjectCourse)
@@ -41,26 +42,37 @@ const HomePage = () => {
             <p className={styles.underHeadingP}>
              The personal teacher for secondary school children to learn anytime, pass exams in one sitting and succeed academically.
             </p>
-            <div className={`row ${styles.afterSubHeading}`}>
-              <div className={`col-md-12 ${styles.afterSubHeading_button}`}>
-                <span className={styles.joinForFree}>
-                  <Link passHref href="/register">
-                    JOIN FOR FREE
-                  </Link>
-                </span>
-                <span className={styles.joinForFree}>
-                  <Link passHref href="/register">
-                   App store
-                  </Link>
-                </span>
-                <span className={styles.joinForFree}>
-                  <Link passHref href="/register">
-                   Google store
-                  </Link>
-                </span>
+
+                <div className={styles.joinForFree}>
+                    <BsPlayCircleFill size={35} color={"#00d9b6"} className={styles.iconCircleWrapper}/> 
+                    <Link 
+                      className={styles.linkIconWrapper}
+                    passHref href="/register">
+                      JOIN FOR FREE
+                    </Link>
+                </div>
+              <div className={styles.afterSubHeading_button}>
+                <div className={styles.appIconsWrapper}>
+                  <a passHref href="/register">
+                      <Image 
+                        src='/assets/img/app-store.svg'
+                        alt="Apple store logo"
+                        width={"1%"}
+                        height={"1%"}
+                      />
+                    </a>
+                </div>
+                <div className={styles.appIconsPlayWrapper}>
+                  <a passHref href="/register">
+                    <Image 
+                      src='/assets/img/app-store.svg'
+                      alt="Apple store logo"
+                      width={"1%"}
+                      height={"1%"}
+                    />
+                  </a>
+                </div>
               </div>
-             
-            </div>
           </div>
           <div className="col-md-6 center">
             <Image
