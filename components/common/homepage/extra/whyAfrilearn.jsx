@@ -78,7 +78,7 @@ const WhyAfrilearn = () => {
     <div
       id="homepageSecondSection"
       className="row why-afrilear-works-segment"
-      style={{ margin: '93px' }}
+      // style={{ margin: '3px' }}
     >
       <h2 className={styles.homepageSecondSectionh2}>Why Afrilearn works</h2>
       <ul className={`${styles.secondSectionul} sub-menu-items-corrected`}>
