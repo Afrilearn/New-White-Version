@@ -26,22 +26,22 @@ const ProfileSection = ({data}) => {
                 </div>
           <div className={styles.afterOneSubHeading_button}>
                 <div className={styles.appIconsWrapper}>
-                  <a passHref href="/register">
+                  <a passHref href="https://apps.apple.com/ng/app/afrilearn/id1587978653" target="_blank">
                       <Image 
                         src='/assets/img/app-store.svg'
                         alt="Apple store logo"
-                        width={"1%"}
-                        height={"1%"}
+                        width={"145%"}
+                        height={"80%"}
                       />
                     </a>
                 </div>
                 <div className={styles.appIconsPlayWrapper}>
-                  <a passHref href="https://play.google.com/store/apps/details?id=com.afrilearn">
+                  <a passHref href="https://play.google.com/store/apps/details?id=com.afrilearn" target="_blank">
                     <Image 
-                      src='/assets/img/app-store.svg'
+                      src='/assets/img/play-store.svg'
                       alt="Apple store logo"
-                      width={"1%"}
-                      height={"1%"}
+                      width={"145%"}
+                      height={"80%"}
                     />
                   </a>
                 </div>

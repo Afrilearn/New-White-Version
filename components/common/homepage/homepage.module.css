@@ -948,22 +948,24 @@
   border-radius: 39px;
 }
 .appIconsWrapper{
-  background-image: url("../../../public/assets/img/app-store.svg");
+  /* background-image: url("../../../public/assets/img/app-store.svg"); */
   background-size: cover;
   background-repeat: no-repeat;
   height: 80%; 
   width: 28%;
   margin-right: 0.7em;
   padding: 0.8em 0;
+  cursor: pointer;
 }
 .appIconsPlayWrapper{
-  background-image: url("../../../public/assets/img/play-store.svg");
+  /* background-image: url("../../../public/assets/img/play-store.svg"); */
   background-size: cover;
   background-repeat: no-repeat;
   height: 80%; 
   width: 31%;
   margin-right: 0.4em;
   padding: 0.8em 0;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

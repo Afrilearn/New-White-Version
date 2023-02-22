@@ -53,22 +53,22 @@ const HomePage = () => {
                 </div>
               <div className={styles.afterSubHeading_button}>
                 <div className={styles.appIconsWrapper}>
-                  <a passHref href="/register">
+                  <a passHref href="https://apps.apple.com/ng/app/afrilearn/id1587978653" target="_blank">
                       <Image 
                         src='/assets/img/app-store.svg'
                         alt="Apple store logo"
-                        width={"1%"}
-                        height={"1%"}
+                        width={"145%"}
+                        height={"80%"}
                       />
                     </a>
                 </div>
                 <div className={styles.appIconsPlayWrapper}>
-                  <a passHref href="https://play.google.com/store/apps/details?id=com.afrilearn">
+                  <a passHref href="https://play.google.com/store/apps/details?id=com.afrilearn" target="_blank">
                     <Image 
-                      src='/assets/img/app-store.svg'
+                      src='/assets/img/play-store.svg'
                       alt="Apple store logo"
-                      width={"1%"}
-                      height={"1%"}
+                      width={"145%"}
+                      height={"80%"}
                     />
                   </a>
                 </div>
@@ -148,6 +148,7 @@ const GameIntro = () => {
                       JOIN FOR FREE
                     </Link>
                 </div>
+                
               </div>
             </section>
           </div>
@@ -200,22 +201,22 @@ const CrossPlatform = () => {
            
              <div className={styles.afterTwoSubHeading_button}>
                 <div className={styles.appIconsWrapper}>
-                  <a passHref href="/register">
+                  <a passHref href="https://apps.apple.com/ng/app/afrilearn/id1587978653" target="_blank">
                       <Image 
                         src='/assets/img/app-store.svg'
                         alt="Apple store logo"
-                        width={"1%"}
-                        height={"1%"}
+                        width={"145%"}
+                        height={"80%"}
                       />
                     </a>
                 </div>
                 <div className={styles.appIconsPlayWrapper}>
-                  <a passHref href="https://play.google.com/store/apps/details?id=com.afrilearn">
+                  <a passHref href="https://play.google.com/store/apps/details?id=com.afrilearn" target="_blank">
                     <Image 
-                      src='/assets/img/app-store.svg'
+                      src='/assets/img/play-store.svg'
                       alt="Apple store logo"
-                      width={"1%"}
-                      height={"1%"}
+                      width={"145%"}
+                      height={"80%"}
                     />
                   </a>
                 </div>
@@ -338,24 +339,12 @@ const Testimonials = () => {
         >
           <section className={styles.container}>
             <Row>
-
-              {/* <Col md={2}>
-                <Image
-                  alt={'design image'}
-                  className={styles.mark}
-                  src="/assets/img/common/homepage/Quote Mark.png"
-                  width={'70%'}
-                  height={'70%'}
-                />
-              </Col> */}
               <Col md={12}>
                 <h3 className={styles.heroText}>{`${data.description}`}</h3>
               </Col>
             
             </Row>
-            {/* <Row className={styles.testimonials_p}>
-              <p>{data.description[0]}</p>
-            </Row> */}
+
           </section>
         </div>
         <CommentPage />
