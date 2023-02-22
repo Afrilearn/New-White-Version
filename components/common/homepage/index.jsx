@@ -42,29 +42,24 @@ const HomePage = () => {
              The personal teacher for secondary school children to learn anytime, pass exams in one sitting and succeed academically.
             </p>
             <div className={`row ${styles.afterSubHeading}`}>
-              <div className={`col-md-4 ${styles.afterSubHeading_button}`}>
+              <div className={`col-md-12 ${styles.afterSubHeading_button}`}>
                 <span className={styles.joinForFree}>
                   <Link passHref href="/register">
                     JOIN FOR FREE
                   </Link>
                 </span>
-              </div>
-              <div className={`col-md-6 ${styles.afterSubHeading_button2}`}>
-                {/* <span className={styles.experienceAfrilearn}>
-                  <Image
-                    alt={'design image'}
-                    className={styles.experienceAfrilearnImg}
-                    src={
-                      '/assets/img/common/homepage/play-button-arrowhead 10.png'
-                    }
-                    width={15}
-                    height={15}
-                  />
+                <span className={styles.joinForFree}>
                   <Link passHref href="/register">
-                    Experience Afrilearn
+                   App store
                   </Link>
-                </span> */}
+                </span>
+                <span className={styles.joinForFree}>
+                  <Link passHref href="/register">
+                   Google store
+                  </Link>
+                </span>
               </div>
+             
             </div>
           </div>
           <div className="col-md-6 center">
@@ -75,7 +70,7 @@ const HomePage = () => {
                 '/assets/img/common/homepage/73984-girl-studying-on-laptop (1).gif'
               }
               width={550}
-              height={500}
+              height={450}
             />
           </div>
         </div>
