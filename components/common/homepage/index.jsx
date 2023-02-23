@@ -91,14 +91,16 @@ const HomePage = () => {
       <ExploreAfrilearn userRole={userRoles} />
       <GameIntro />
       <CrossPlatform />
-      {/* <JoinLeague /> */}
-      <Row className="m-auto mt-5 mb-5 w-50 pt-5 pb-5">
-        {/* <Col md={6}>  */}
+      <div className={styles.innerWrapper}>
         <Testimonials />
-      </Row>
+        <Faq />
+      </div>
+      {/* <JoinLeague /> */}
+      {/* <Row className="m-auto mt-5 mb-5 w-50 pt-5 pb-5"> */}
+        {/* <Col md={6}>  */}
+      {/* </Row> */}
       {/* </Col>
         <Col md={6}> */}
-      <Faq />
       {/* </Col>
       </Row> */}
       <QuickJoin />
@@ -335,7 +337,7 @@ const Testimonials = () => {
       <div className="row">
         <div
           id="landingpage-testimonials"
-          className={`row ${styles.testimonials}`}
+          className={styles.testimonials}
         >
           <section className={styles.container}>
             <Row>
@@ -420,7 +422,7 @@ export const Faq = () => {
       <div
         id="landingpage-faq"
         className={`row ${styles.faq}`}
-        style={{ margin: '25px' }}
+        // style={{ margin: '25px' }}
       >
         <h2>{data.title}</h2>
         <section>

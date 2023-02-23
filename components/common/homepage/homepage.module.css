@@ -1028,3 +1028,9 @@
     margin-left: 17%;
   }
 }
+
+.innerWrapper{
+  /* background-color: blue; */
+  display: flex;
+  width: 100vw;
+}
