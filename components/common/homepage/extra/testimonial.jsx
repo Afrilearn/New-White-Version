@@ -169,9 +169,9 @@ const Testimonials = () => {
     <div className="pt-4">
       <Slider {...settings}>
         {appreciation.map((data, i) => (
-          <div key={i} className={`row ${styles.commentPag}`}>
+          <div key={i} className={styles.commentPag}>
             <div className={`${styles.lis} ${styles.list}`}>
-              <Row className={styles.commentwrappe}>
+              <div className={styles.commentwrappe}>
                 <div className={styles.commentCont}>
                   <Image
                     alt={'design image'}
@@ -183,7 +183,7 @@ const Testimonials = () => {
                   {data.content} -  <small>{data.name}</small> <small> ({data.dClass})</small>
            
                 </div>
-              </Row>
+              </div>
             </div>
           </div>
         ))}

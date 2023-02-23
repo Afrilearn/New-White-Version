@@ -95,14 +95,6 @@ const HomePage = () => {
         <Testimonials />
         <Faq />
       </div>
-      {/* <JoinLeague /> */}
-      {/* <Row className="m-auto mt-5 mb-5 w-50 pt-5 pb-5"> */}
-        {/* <Col md={6}>  */}
-      {/* </Row> */}
-      {/* </Col>
-        <Col md={6}> */}
-      {/* </Col>
-      </Row> */}
       <QuickJoin />
       <Partners />
       <Footer />
@@ -334,20 +326,20 @@ const Testimonials = () => {
   }
   return (
     <>
-      <div className="row">
+      <div className={styles.testerWRapper}>
         <div
           id="landingpage-testimonials"
           className={styles.testimonials}
         >
-          <section className={styles.container}>
-            <Row>
-              <Col md={12}>
-                <h3 className={styles.heroText}>{`${data.description}`}</h3>
-              </Col>
+          <div className={styles.container}>
+            {/* <Row> */}
+              {/* <Col md={12}> */}
+                {/* <h3 className={styles.heroText}>{`${data.description}`}</h3> */}
+              {/* </Col> */}
             
-            </Row>
+            {/* </Row> */}
 
-          </section>
+          </div>
         </div>
         <CommentPage />
         {/* </section> */}
@@ -420,22 +412,22 @@ export const Faq = () => {
   return (
     <>
       <div
-        id="landingpage-faq"
-        className={`row ${styles.faq}`}
+        // id="landingpage-faq"
+        className={` ${styles.faq}`}
         // style={{ margin: '25px' }}
       >
-        <h2>{data.title}</h2>
-        <section>
+        <div className={styles.faqWrapper}>
+          <h2>{data.title}</h2>
           {faqQuestions.map((faq, i) => {
             return (
-              <Accordion key={i} className="homepageAcc">
-                <Accordion.Item eventKey={i}>
+              <Accordion key={i} >
+                <Accordion.Item eventKey={i} >
                   <Accordion.Header>{faq.faq}</Accordion.Header>
 
                   <Accordion.Body
                     key={i}
-                    className="border-0 accordion-body-com"
-                    // style={{ width: '125%' }}
+                    className={styles.bodyWrapper}
+                   
                   >
                     {faq.answ}
                   </Accordion.Body>
@@ -443,7 +435,7 @@ export const Faq = () => {
               </Accordion>
             )
           })}
-        </section>
+        </div>
       </div>
     </>
   )
