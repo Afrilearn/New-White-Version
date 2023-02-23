@@ -327,20 +327,7 @@ const Testimonials = () => {
   return (
     <>
       <div className={styles.testerWRapper}>
-        <div
-          id="landingpage-testimonials"
-          className={styles.testimonials}
-        >
-          <div className={styles.container}>
-            {/* <Row> */}
-              {/* <Col md={12}> */}
-                {/* <h3 className={styles.heroText}>{`${data.description}`}</h3> */}
-              {/* </Col> */}
-            
-            {/* </Row> */}
-
-          </div>
-        </div>
+        
         <CommentPage />
         {/* </section> */}
       </div>

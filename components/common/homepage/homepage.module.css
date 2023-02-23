@@ -1035,6 +1035,7 @@
   /* width: 100vw; */
   padding: 0 2em;
   justify-content: space-evenly;
+  align-items: center;
   /* background-color: yellow; */
 }
 .faq{
@@ -1047,8 +1048,13 @@
 .testerWRapper{
   background-color: blue;
   width: 35%;
+  height: 50vh;
+  /* padding: 2em 0; */
   /* margin-right: 2em; */
 }
 .bodyWrapper{
   width: 125%;
+}
+.testimonials{
+  background-color: red;
 }
