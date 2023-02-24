@@ -91,16 +91,10 @@ const HomePage = () => {
       <ExploreAfrilearn userRole={userRoles} />
       <GameIntro />
       <CrossPlatform />
-      {/* <JoinLeague /> */}
-      <Row className="m-auto mt-5 mb-5 w-50 pt-5 pb-5">
-        {/* <Col md={6}>  */}
+      <div className={styles.innerWrapper}>
         <Testimonials />
-      </Row>
-      {/* </Col>
-        <Col md={6}> */}
-      <Faq />
-      {/* </Col>
-      </Row> */}
+        <Faq />
+      </div>
       <QuickJoin />
       <Partners />
       <Footer />
@@ -332,21 +326,8 @@ const Testimonials = () => {
   }
   return (
     <>
-      <div className="row">
-        <div
-          id="landingpage-testimonials"
-          className={`row ${styles.testimonials}`}
-        >
-          <section className={styles.container}>
-            <Row>
-              <Col md={12}>
-                <h3 className={styles.heroText}>{`${data.description}`}</h3>
-              </Col>
-            
-            </Row>
-
-          </section>
-        </div>
+      <div className={styles.testerWRapper}>
+        
         <CommentPage />
         {/* </section> */}
       </div>
@@ -418,22 +399,22 @@ export const Faq = () => {
   return (
     <>
       <div
-        id="landingpage-faq"
-        className={`row ${styles.faq}`}
-        style={{ margin: '25px' }}
+        // id="landingpage-faq"
+        className={` ${styles.faq}`}
+        // style={{ margin: '25px' }}
       >
-        <h2>{data.title}</h2>
-        <section>
+        <div className={styles.faqWrapper}>
+          <h2>{data.title}</h2>
           {faqQuestions.map((faq, i) => {
             return (
-              <Accordion key={i} className="homepageAcc">
-                <Accordion.Item eventKey={i}>
+              <Accordion key={i} >
+                <Accordion.Item eventKey={i} >
                   <Accordion.Header>{faq.faq}</Accordion.Header>
 
                   <Accordion.Body
                     key={i}
-                    className="border-0 accordion-body-com"
-                    // style={{ width: '125%' }}
+                    className={styles.bodyWrapper}
+                   
                   >
                     {faq.answ}
                   </Accordion.Body>
@@ -441,7 +422,7 @@ export const Faq = () => {
               </Accordion>
             )
           })}
-        </section>
+        </div>
       </div>
     </>
   )
@@ -539,11 +520,11 @@ const QuickJoin = () => {
 
   return (
     <>
-      <div id="landingpage-quickJoin" className={`row ${styles.quickJoin}`}>
+      <div className={` ${styles.quickJoin}`}>
         <h2>{data.title}</h2>
         <h6>{data.description}</h6>
         <section className={styles.quickJoinSec}>
-          <div className={`row ${styles.courseSelectSection}`}>
+          <div className={` ${styles.courseSelectSection}`}>
             {!roles ? (
               <Spinner />
             ) : (

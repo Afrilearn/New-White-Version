@@ -6,11 +6,13 @@ import { Col, Row } from 'react-bootstrap'
 const Testimonials = () => {
   const settings = {
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     vertical: true,
     verticalSwiping: true,
     autoplay: true,
+    speed: 500,
+    // fade: true,
   }
 
   const appreciation = [
@@ -166,12 +168,10 @@ const Testimonials = () => {
   ]
 
   return (
-    <div className="pt-4">
+    <>
       <Slider {...settings}>
         {appreciation.map((data, i) => (
-          <div key={i} className={`row ${styles.commentPag}`}>
-            <div className={`${styles.lis} ${styles.list}`}>
-              <Row className={styles.commentwrappe}>
+              <div key={i} className={styles.commentwrappe}>
                 <div className={styles.commentCont}>
                   <Image
                     alt={'design image'}
@@ -180,15 +180,14 @@ const Testimonials = () => {
                     width={15}
                     height={15}
                   />{' '}
-                  {data.content} -  <small>{data.name}</small> <small> ({data.dClass})</small>
+                  {data.content} -  {data.name} ({data.dClass})
            
                 </div>
-              </Row>
+              {/* </div> */}
             </div>
-          </div>
         ))}
       </Slider>
-    </div>
+    </>
   )
 }
 
