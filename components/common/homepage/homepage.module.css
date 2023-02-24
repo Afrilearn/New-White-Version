@@ -1035,20 +1035,21 @@
   /* width: 100vw; */
   padding: 0 2em;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   /* background-color: yellow; */
 }
 .faq{
-  width: 30vw;
+  width: 35vw;
   margin-right: 2em;
 }
 .faqWrapper{
   /* width: 150%; */
 }
 .testerWRapper{
-  background-color: blue;
-  width: 35%;
-  height: 50vh;
+  /* background-color: blue; */
+  width: 40%;
+  height: 30vh;
+  margin-top: 2.5em;
   /* padding: 2em 0; */
   /* margin-right: 2em; */
 }
@@ -1056,5 +1057,5 @@
   width: 125%;
 }
 .testimonials{
-  background-color: red;
+  /* background-color: red; */
 }

@@ -6,7 +6,7 @@ import { Col, Row } from 'react-bootstrap'
 const Testimonials = () => {
   const settings = {
     infinite: true,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     vertical: true,
     verticalSwiping: true,
@@ -167,13 +167,11 @@ const Testimonials = () => {
   ]
 
   return (
-    <div className="pt-4">
+    <>
       <Slider {...settings}>
         {appreciation.map((data, i) => (
-          <div key={i} className={styles.commentPag}>
-            {/* <div className={`${styles.lis} ${styles.list}`}> */}
-              <div className={styles.commentwrappe}>
-                {/* <div className={styles.commentCont}> */}
+              <div key={i} className={styles.commentwrappe}>
+                <div className={styles.commentContNew}>
                   <Image
                     alt={'design image'}
                     className={styles.commentImg}
@@ -183,13 +181,12 @@ const Testimonials = () => {
                   />{' '}
                   {data.content} -  {data.name} ({data.dClass})
            
-                {/* </div> */}
+                </div>
               {/* </div> */}
             </div>
-          </div>
         ))}
       </Slider>
-    </div>
+    </>
   )
 }
 
