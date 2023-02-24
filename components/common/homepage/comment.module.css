@@ -11,8 +11,9 @@
 }
 .commentwrappe{
   margin-bottom: 0.5em;
-  background-color: rgb(194, 183, 183);
-  padding: 1em;
+  background-color: #f1f2f4;
+  padding: 1em 1.5em;
+  border-radius: 8px;
 
 }
 .commentwrapper {

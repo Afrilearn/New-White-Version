@@ -6,12 +6,13 @@ import { Col, Row } from 'react-bootstrap'
 const Testimonials = () => {
   const settings = {
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     vertical: true,
     verticalSwiping: true,
     autoplay: true,
     speed: 500,
+    // fade: true,
   }
 
   const appreciation = [
@@ -171,7 +172,7 @@ const Testimonials = () => {
       <Slider {...settings}>
         {appreciation.map((data, i) => (
               <div key={i} className={styles.commentwrappe}>
-                <div className={styles.commentContNew}>
+                <div className={styles.commentCont}>
                   <Image
                     alt={'design image'}
                     className={styles.commentImg}

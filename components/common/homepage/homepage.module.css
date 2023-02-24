@@ -586,8 +586,6 @@
   font-size: 30px;
   text-align: center;
   color: #29465b;
-  /* background-color: red; */
-  /* width:  */
 }
 
 .faq section {
@@ -970,6 +968,29 @@
   cursor: pointer;
 }
 
+.innerWrapper{
+  display: flex;
+  padding: 0 2em;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.faq{
+  width: 35vw;
+  margin-bottom: 5.5em;
+  margin-right: 7em;
+}
+.testerWRapper{
+  width: 40%;
+  height: 30vh;
+  margin-top: 2.5em;
+}
+.bodyWrapper{
+  width: 125%;
+}
+.testimonials{
+  /* background-color: red; */
+}
+
 @media screen and (max-width: 768px) {
   .cardstylling {
     margin-top: 45px;
@@ -993,13 +1014,6 @@
     width: fit-content;
     margin: auto;
   }
-
-  /* .faq section {
-    margin-top: 30px;
-    place-content: center;
-    margin-left: 1px;
-    width: 70vw;
-  } */
 
   .partners .partnerLogo {
     padding: 1px !important;
@@ -1028,34 +1042,26 @@
     margin-bottom: 8px;
     margin-left: 17%;
   }
-}
+  .innerWrapper{
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .testerWRapper{
+    width: 100%;
+    height: 10vh;
+    margin-top: 0.1em;
+  }
+  .faq{
+    width: 62vw;
+    margin-top: 40em;
+    margin-right: 7em;
+  }
+  .faq h2 {
+ 
+    font-family: 'heading';
+    font-size: 1em;
+    text-align: center;
+    width: 105%;
+  }
 
-.innerWrapper{
-  display: flex;
-  /* width: 100vw; */
-  padding: 0 2em;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  /* background-color: yellow; */
-}
-.faq{
-  width: 35vw;
-  margin-right: 2em;
-}
-.faqWrapper{
-  /* width: 150%; */
-}
-.testerWRapper{
-  /* background-color: blue; */
-  width: 40%;
-  height: 30vh;
-  margin-top: 2.5em;
-  /* padding: 2em 0; */
-  /* margin-right: 2em; */
-}
-.bodyWrapper{
-  width: 125%;
-}
-.testimonials{
-  /* background-color: red; */
 }
