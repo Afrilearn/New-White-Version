@@ -520,11 +520,11 @@ const QuickJoin = () => {
 
   return (
     <>
-      <div id="landingpage-quickJoin" className={`row ${styles.quickJoin}`}>
+      <div className={` ${styles.quickJoin}`}>
         <h2>{data.title}</h2>
         <h6>{data.description}</h6>
         <section className={styles.quickJoinSec}>
-          <div className={`row ${styles.courseSelectSection}`}>
+          <div className={` ${styles.courseSelectSection}`}>
             {!roles ? (
               <Spinner />
             ) : (

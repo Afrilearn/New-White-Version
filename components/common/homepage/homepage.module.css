@@ -518,6 +518,7 @@
   color: #333333;
 }
 
+
 @media screen and (max-width: 621px) {
   .testimonials {
     margin: 0%;
@@ -609,12 +610,12 @@
   color: #29465b;
   font-family: 'heading';
   font-size: 40px;
-  margin-top: 50px;
   text-align: center;
+  padding-top: 0.6em;
 }
 .quickJoin h6 {
   text-align: center;
-  margin-bottom: 93px;
+  margin-bottom: 1.7em;
 }
 
 .quickJoin .container {
@@ -626,7 +627,7 @@
 
 .quickJoinSec {
   align-items: flex-start;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 .quickJoin section {
@@ -681,7 +682,9 @@
   top: 38px;
   right: 15px;
 }
-
+.courseSelectSection{
+  padding-bottom: 1.3em;
+}
 .courseSelectSectionDropDown {
   background: #fff;
   color: #787878 !important;
@@ -868,7 +871,7 @@
 }
 
 .partners .partnerLogo {
-  padding: 10px !important;
+  padding: 25px !important;
 }
 
 .footerright {
