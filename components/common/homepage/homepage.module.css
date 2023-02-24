@@ -794,7 +794,7 @@
 }
 
 .partners {
-  margin: 50px;
+  margin: 5px;
   position: relative;
   color: #29465b;
 }
@@ -802,7 +802,7 @@
 .partners section {
   overflow: auto;
   white-space: nowrap;
-  padding: 50px 50px 120px;
+  padding: 15px;
   /* overflow-y: hidden; */
   overflow-y: hidden;
 }

@@ -329,6 +329,7 @@ const Testimonials = () => {
       <div className={styles.testerWRapper}>
         
         <CommentPage />
+        {/* </section> */}
       </div>
     </>
   )
