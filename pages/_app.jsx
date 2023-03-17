@@ -5,6 +5,7 @@ import Layout from "../components/layouts";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { SessionProvider } from "next-auth/react";
 import { SSRProvider } from 'react-bootstrap';
+// import { ChakraProvider } from '@chakra-ui/react'
 
 import {store } from "../redux/store";
 import { Provider } from "react-redux";
@@ -25,7 +26,9 @@ function MyApp({ Component, pageProps }) {
       <SSRProvider>
       <SessionProvider session={pageProps.session}>
       <Layout>
-        <Component {...pageProps} />
+          {/* <ChakraProvider> */}
+            <Component {...pageProps} />
+          {/* </ChakraProvider> */}
       </Layout>
       </SessionProvider>
       </SSRProvider>
