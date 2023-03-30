@@ -61,7 +61,7 @@ const Navigation = () => {
   //   router.push('/login')
 
   // }
-  console.log(modalShowed)
+
 
   const { searchRecord } = useSelector((state) => state.mySubjectCourse)
   console.log(searchRecord)
