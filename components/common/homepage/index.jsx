@@ -761,7 +761,7 @@ export const Footer = () => {
           </Row>
         </Col>
       </Row>
-
+ 
       <div>
         <div className={`row ${styles.last}`}>
           <div className={`col-md-3 ${styles.lasttt}`}>
@@ -776,7 +776,7 @@ export const Footer = () => {
           </div>
           <div className={`col-md-2 ms-lg-5 ${styles.lastt}`}>
             <li>
-              <Link passHref href="/">
+              <Link passHref href="/terms-of-use">
                 Terms of Service
               </Link>
             </li>

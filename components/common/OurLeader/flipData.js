@@ -11,6 +11,11 @@ export const flipData = [
         role: "Co-founder & Head of Content",
         image: '/assets/img/Gabriel.jpg',
         summary: "From a Reporter, Gabriel grew to become a PR Executive, and then COO of BBB Media and BroadwayTV, a top media agency in Lagos. While in this position, he spearheaded the marketing campaign of some of Nigeria’s highest-grossing cinema movies in the last three years and transformed rejected brands into fans favorites. He oversees Content Development at Afrilearn. Gabriel holds a degree in Mass Communication from Covenant University."
+    },{
+        name: "Lamide Johnson",
+        role: "Chief Growth Officer",
+        image: '/assets/img/lamide.jpg',
+        summary: "Lamide Johnson believes that innovation, technology and strategic partnerships leveraged by entrepreneurs are the fastest way to build economic prosperity in Africa. He has spent the last decade designing, building and scaling digital products that solves urgent problems in Africa. He has a Master’s degree in International Business from Loughborough University, United Kingdom."
     },
     {
         name: "Michael Oladele",
