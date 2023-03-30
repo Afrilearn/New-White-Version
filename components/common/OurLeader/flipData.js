@@ -17,6 +17,8 @@ export const flipData = [
         image: '/assets/img/lamide.jpg',
         summary: "Lamide Johnson believes that innovation, technology and strategic partnerships leveraged by entrepreneurs are the fastest way to build economic prosperity in Africa. He has spent the last decade designing, building and scaling digital products that solves urgent problems in Africa. He has a Master’s degree in International Business from Loughborough University, United Kingdom."
     },
+
+    
     {
         name: "Michael Oladele",
         role: "Lead, Technical",
