@@ -4,7 +4,7 @@ import styles from './passtExamQue.module.css'
 import { useDispatch, useSelector } from 'react-redux'
 import React, { useEffect, useState } from 'react'
 import Timer from 'react-compound-timer'
-import { Progress } from 'reactstrap'
+// import { Progress } from 'reactstrap'
 import Swal from 'sweetalert2'
 //import Speech from "react-speech";
 import {
@@ -373,11 +373,11 @@ export const ExamQuestionPassage = ({ sub_dat }) => {
       (correctAnswers.length / sub_dat.questions?.length) * 100
     ),
   }
-  const progress = {
-    subjectCategoryId: subject.pastQuestionQue[0]?.subject_details?.subject_id,
-    pastQuestionCategoryId: sub_dat.category,
-    courseId: subject?.dashboardWeb?.enrolledCourse?.id,
-  }
+  // const progress = {
+  //   subjectCategoryId: subject.pastQuestionQue[0]?.subject_details?.subject_id,
+  //   pastQuestionCategoryId: sub_dat.category,
+  //   courseId: subject?.dashboardWeb?.enrolledCourse?.id,
+  // }
   const quizLessonId = sub_dat.quizLessonId
   const submitttedData = sub_dat.pastQuestion ? 'pastQue' : 'Quiz'
   const content = sub_dat.pastQuestion && router.query[0]
@@ -386,7 +386,7 @@ export const ExamQuestionPassage = ({ sub_dat }) => {
   const SubmitFunc = (analysis) => {
     if (analysis === 'pastQue') {
       dispatch(submitPastQuestionResult(submitData, token))
-      dispatch(submitPastQuestionProgress(progress, token))
+      // dispatch(submitPastQuestionProgress(progress, token))
     } else {
       dispatch(submitLessonQuizResult(submitQuiz, quizLessonId, token))
       console.log(submitQuiz)
@@ -512,12 +512,12 @@ export const ExamQuestionPassage = ({ sub_dat }) => {
             </h3>
           </Row>
           <Row className="p-3">
-            <Progress
+            {/* <Progress
               className="p-0"
               animated
               color="success"
               value={nextQues * (100 / tot_numb)}
-            />
+            /> */}
           </Row>
           <Row
             style={{
