@@ -13,6 +13,7 @@ const Cards = ({flippers}) => {
            <img 
             src={flippers.image}
             alt={flippers.alt}
+            
            />
            <div>
            <h4 className={styles.leadername}>{flippers.name}</h4>
