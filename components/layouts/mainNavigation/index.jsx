@@ -184,7 +184,7 @@ const Navigation = () => {
   return (
     <>
     <div className={styles.topNavBar}>
-        <p className={styles.topText}><strong>You Opinion matters!</strong> Tell us how to improve your Afrilearn Experience <Link 
+        <p className={styles.topText}><strong>Your Opinion Matters!</strong> Tell us how to improve your Afrilearn Experience <Link 
         href="https://forms.gle/RLKxPkWY3XDH3Adk8">
           {/* <span > */}
           <a target="_blank" >
