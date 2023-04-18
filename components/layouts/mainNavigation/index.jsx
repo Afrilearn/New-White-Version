@@ -188,7 +188,7 @@ const Navigation = () => {
         href="https://forms.gle/RLKxPkWY3XDH3Adk8">
           {/* <span > */}
           <a target="_blank" >
-            <span className={styles.learnMoreText}>Link HERE</span>
+            <span className={styles.learnMoreText}>HERE</span>
           </a>
           {/* </span> */}
           </Link>
