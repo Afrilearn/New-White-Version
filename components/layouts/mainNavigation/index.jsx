@@ -48,19 +48,9 @@ const Navigation = () => {
   const [keyword, setKeyword] = useState('')
   const [modalShowed, setModalShowed] = useState(false)
   const [searchIds, setSearchIds] = useState('')
-  // const [searchResult, setSearchResult] = useState('')
-  let localData
-  // const checkoLocal = () => {
-  //   if (typeof window !== "undefined") {
-  //     localData = JSON.parse(localStorage.getItem("persist:root"));
-  //   }
-  //   return localData;
-  // };
-  // const handleLogout = () => {
-  //   window.localStorage.removeItem('')
-  //   router.push('/login')
 
-  // }
+  let localData
+
 
 
   const { searchRecord } = useSelector((state) => state.mySubjectCourse)
@@ -194,15 +184,22 @@ const Navigation = () => {
   return (
     <>
     <div className={styles.topNavBar}>
-        <p className={styles.topText}>As seen in <strong>Global Citizen</strong>, Afrilearn is democratizing quality education for Africans! <Link 
-        href="https://www.globalcitizen.org/en/content/nigeria-schools-covid-19-internet-isaac-oladipupo/">
+        <p className={styles.topText}><strong>You Opinion matters!</strong> Tell us how to improve your Afrilearn Experience <Link 
+        href="https://forms.gle/RLKxPkWY3XDH3Adk8">
           {/* <span > */}
           <a target="_blank" >
-            <span className={styles.learnMoreText}>Learn more</span>
+            <span className={styles.learnMoreText}>HERE</span>
           </a>
           {/* </span> */}
           </Link>
         </p>
+        {/* <p className={styles.topText}>As seen in <strong>Global Citizen</strong>, Afrilearn is democratizing quality education for Africans! <Link 
+        href="https://www.globalcitizen.org/en/content/nigeria-schools-covid-19-internet-isaac-oladipupo/">
+          <a target="_blank" >
+            <span className={styles.learnMoreText}>Learn more</span>
+          </a>
+          </Link>
+        </p> */}
     </div>
 
       <Navbar
