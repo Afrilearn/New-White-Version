@@ -186,11 +186,9 @@ const Navigation = () => {
     <div className={styles.topNavBar}>
         <p className={styles.topText}><strong>Your Opinion Matters!</strong> Tell us how to improve your Afrilearn Experience <Link 
         href="https://forms.gle/RLKxPkWY3XDH3Adk8">
-          {/* <span > */}
           <a target="_blank" >
             <span className={styles.learnMoreText}>HERE</span>
           </a>
-          {/* </span> */}
           </Link>
         </p>
         {/* <p className={styles.topText}>As seen in <strong>Global Citizen</strong>, Afrilearn is democratizing quality education for Africans! <Link 
@@ -203,21 +201,20 @@ const Navigation = () => {
     </div>
 
       <Navbar
-        // bg="light"
         expand="lg"
         // fixed="top"
         collapseOnSelect
         // style={{ backgroundColor: "#FDFDFD !important" }}
-        className={`${styles.mainNavbar} pt-3`}
+        className={`${styles.mainNavbar} pt-3 ms-5`}
       >
         <Navbar.Brand>
           <Link passHref href="/">
             <Image
-              src="/assets/img/logonew.png"
+              src="/assets/img/afri.png"
               alt="logo"
               className="brand-logo"
-              width="150px"
-              height="50px"
+              width="90px"
+              height="65px"
             />
           </Link>
         </Navbar.Brand>
