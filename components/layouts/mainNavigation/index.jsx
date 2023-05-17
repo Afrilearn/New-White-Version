@@ -65,13 +65,6 @@ const Navigation = () => {
   }
   const handleLogout = async () => {
     persistor.purge()
-    // router.push({
-    //   pathname: '/auth/login',
-    // },
-    // undefined, { shallow: true }
-    // )
-
-    // let locals = checkoLocal();
 
     signIn()
     window.history.pushState(null, 'login', '/login')
@@ -84,9 +77,6 @@ const Navigation = () => {
     setUserRole(roleId)
   }, [user])
 
-  // useEffect(() => {
-  //   setSearchResult(searchRecord)
-  // }, [searchResult])
 
   const [subjCourId, setsubjCourId] = useState({})
   const toggleModal = (cour, subj) => {
@@ -95,7 +85,6 @@ const Navigation = () => {
   }
 
   useEffect(() => {
-    // console.log(subjCourId)
     if (Object.keys(subjCourId).length !== 0) {
       dispatch(fetchCourseDetailsInitiate(subjCourId.courId, subjCourId.subjId))
     }
@@ -205,19 +194,18 @@ const Navigation = () => {
         // fixed="top"
         collapseOnSelect
         // style={{ backgroundColor: "#FDFDFD !important" }}
-        className={`${styles.mainNavbar} pt-3 ms-5`}
+        className={`${styles.mainNavbar} pt-3 `}
       >
-        <Navbar.Brand>
+        <div className="brand-logo">
           <Link passHref href="/">
             <Image
               src="/assets/img/afri.png"
               alt="logo"
-              className="brand-logo"
               width="90px"
               height="65px"
             />
           </Link>
-        </Navbar.Brand>
+        </div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         {/* <Toggle /> */}
 

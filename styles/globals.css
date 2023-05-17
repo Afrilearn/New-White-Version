@@ -53,6 +53,7 @@ body {
   /* font-family: 'Comfortaa', cursive; */
 }
 
+
 h1,
 h3,
 p {
@@ -1406,5 +1407,24 @@ figure img {
   }
   h1.text-light.text-center {
     text-align: left !important;
+  }
+
+}
+.brand-logo{
+  margin-left: 5%;
+}
+@media screen and (max-width: 989px) {
+  .brand-logo{
+    margin-left: 10.3%;
+  }
+}
+@media screen and (max-width: 851px) {
+  .brand-logo{
+    margin-left: 7.3%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .brand-logo{
+    margin-left: 0.3%;
   }
 }
